@@ -140,10 +140,10 @@ $wh_inv4 = $row_Inverter4['wh'] / 1000; $wh_inv5 = $row_Inverter5['wh'] / 1000; 
 $wh_inv7 = $row_Inverter7['wh'] / 1000; $wh_inv8 = $row_Inverter8['wh'] / 1000; $wh_inv9 = $row_Inverter9['wh'] / 1000;
 $wh_inv0 = $row_Inverter0['wh'] / 1000; $wh_invA = $row_InverterA['wh'] / 1000; $wh_invB = $row_InverterB['wh'] / 1000;
 
-$totalpower = $row_Inverter1['dcpower'] + $row_Inverter2['dcpower'] + $row_Inverter3['dcpower'] + $row_Inverter4['dcpower'] + $row_Inverter5['dcpower'] + $row_Inverter6['dcpower'] 
-			+ $row_Inverter7['dcpower'] + $row_Inverter8['dcpower'] + $row_Inverter9['dcpower'] + $row_Inverter0['dcpower'] + $row_InverterA['dcpower'] + $row_InverterB['dcpower'];
-$totalcurr = $row_Inverter1['dccurrent'] + $row_Inverter2['dccurrent'] + $row_Inverter3['dccurrent'] + $row_Inverter4['dccurrent'] + $row_Inverter5['dccurrent'] + $row_Inverter6['dccurrent']
-			 + $row_Inverter7['dccurrent'] + $row_Inverter8['dccurrent'] + $row_Inverter9['dccurrent'] + $row_Inverter0['dccurrent'] + $row_InverterA['dccurrent'] + $row_InverterB['dccurrent'];
+$totalpower = 	$row_Inverter1['dcpower'] + $row_Inverter2['dcpower'] + $row_Inverter3['dcpower'] + $row_Inverter4['dcpower'] + $row_Inverter5['dcpower'] + $row_Inverter6['dcpower'] 
+		+ $row_Inverter7['dcpower'] + $row_Inverter8['dcpower'] + $row_Inverter9['dcpower'] + $row_Inverter0['dcpower'] + $row_InverterA['dcpower'] + $row_InverterB['dcpower'];
+$totalcurr =	$row_Inverter1['dccurrent'] + $row_Inverter2['dccurrent'] + $row_Inverter3['dccurrent'] + $row_Inverter4['dccurrent'] + $row_Inverter5['dccurrent'] + $row_Inverter6['dccurrent']
+		+ $row_Inverter7['dccurrent'] + $row_Inverter8['dccurrent'] + $row_Inverter9['dccurrent'] + $row_Inverter0['dccurrent'] + $row_InverterA['dccurrent'] + $row_InverterB['dccurrent'];
 $totalkwh = $wh_inv1 + $wh_inv2 + $wh_inv3 + $wh_inv4 + $wh_inv5 + $wh_inv6 + $wh_inv7 + $wh_inv8 + $wh_inv9 + $wh_inv0 + $wh_invA + $wh_invB;
 $totalvdc = $vdc1 + $vdc2 + $vdc3 + $vdc4 + $vdc5 + $vdc6 + $vdc7 + $vdc8 + $vdc9 + $vdc0 + $vdcA + $vdcB;
 ?>
@@ -784,7 +784,7 @@ $totalvdc = $vdc1 + $vdc2 + $vdc3 + $vdc4 + $vdc5 + $vdc6 + $vdc7 + $vdc8 + $vdc
     }
 ?>
 			</td>
-	<?php
+<?php
     if ($inverters > 10) {
 ?>        
 	  <td width="16%%" height="194">
@@ -902,9 +902,10 @@ $totalvdc = $vdc1 + $vdc2 + $vdc3 + $vdc4 + $vdc5 + $vdc6 + $vdc7 + $vdc8 + $vdc
 		        <td colspan="2" align="center"><?php echo $row_InverterB['ts']; ?></td>
 	          </tr>
 	        </table>
-		    <?php
+<?php
     }
-?></td>
+?>
+	</td>
     </tr>
 		<tr>
 		  <td height="10" align="center"></td>
