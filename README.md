@@ -1,2 +1,5 @@
 # e2site
-PHP Website that displays enecsys inverter status works only in conjunction with the e2pv script by omoekbeek
+PHP Website that displays enecsys inverter status.
+
+This script only works in conjunction with the e2pv
+script of omoerbeek https://github.com/omoerbeek/e2pv
